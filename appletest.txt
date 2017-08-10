@@ -1,0 +1,34 @@
+import org.testng.Assert;
+import org.testng.annotations.Test;
+public class appletest {
+
+	@Test
+	public void testOneTime() {
+		String given = "Good Morning";
+		String find = String.valueOf('M');
+		String newString = given.replace(find, "m" );
+		Assert.assertFalse(newString.contains(find));
+	}
+	
+	@Test
+	public void testOneLine() {
+		String given = "Good Morning";
+		String find = String.valueOf('G');
+		String nextString = replaceString(given,find);
+		Assert.assertFalse(nextString.toString().contains(String.valueOf(find)));
+	}
+	public String replaceString(String given, char find) {
+		StringBuffer s = new StringBuffer(given);
+		StringBuffer replace = new StringBuffer();
+		
+		for (int i = 0;i < given.length();i++) {
+			char newChar = s.charAt(i);
+			
+			}
+		String newChar= replace.toString();
+		return newChar;
+		}
+			
+		
+	}
+}
