@@ -11,6 +11,15 @@ public class appletest {
 	}
 	
 	@Test
+	public void testOneTimeNeg() {
+		String given = "Good Morning";
+		String find = String.valueOf('H');
+		String newString = given.replace(find, "h" );
+		Assert.assertFalse(newString.contains(find));
+	}
+	
+	
+	@Test
 	public void testOneLine() {
 		String given = "Good Morning";
 		String find = String.valueOf('G');
